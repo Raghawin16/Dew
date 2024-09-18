@@ -1,0 +1,59 @@
+/* Media query for high-resolution (Retina) displays */
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  
+  .logo-img-1x { display: none; }
+  .logo-img-2x { display: inline-block; }
+
+  /* Optional styling for high-res displays */
+  .header-image {
+    height: 60px; /* Increase size for retina displays */
+    margin-right: 15px;
+    border-radius: 0.75rem;
+  }
+}
+
+/* General styles */
+.header-image {
+  height: 50px; /* Adjust the height as needed */
+  margin-right: 20px;
+  border-radius: 0.5rem; /* Add space between the image and the brand text */
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Navbar styles */
+.navbar-dark .navbar-nav .nav-link {
+  color: white; /* Default color for nav links */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: green; /* Color on hover */
+}
